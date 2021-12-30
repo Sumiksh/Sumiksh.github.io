@@ -1,0 +1,118 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'open sans', sans-serif;
+
+}
+
+body{
+    background: white;
+}
+
+.wrapper{
+    display: flex;
+    height: auto;
+}
+
+.wrapper .sidebar{
+    background: rgb(5, 68, 100);
+    width: 16%;
+    float: left;
+    height: 100vh;
+    transition: all 0.5s ease;
+    border-color: red;
+    border-width: 2px;
+    border: solid;
+}
+
+
+
+
+.sidebar a{
+    display: block;
+    text-decoration: none;
+    color: seashell;
+    margin: auto;
+    padding: 10px 5px;
+    text-align: left;
+    border-bottom: 1px solid rgb(31, 31, 32);
+    font-size: 16px;
+    
+}
+
+
+#frame{
+    float: right;
+    width: 1330px;
+    height: 100vh;
+}
+
+
+.pictures{
+    /* margin-left: auto;
+    margin-right: auto;
+    display: block; */
+    width: 100%;
+    height: 100vh;
+    /* width: 1200px;
+    height: 690px; */
+    
+}  
+
+
+.contactinfo{
+    color: seashell;
+    font-size: 14px;
+}
+
+.skills{
+    font :30px;
+    display: block;
+    margin: 0;
+    text-align: center;
+    
+}
+
+.exp{
+    border: rgb(4, 4, 61);
+    border-style: solid;
+    border-width: 2px;
+    
+}
+
+.round{
+    display: block;
+    margin: auto;
+    height:400px;
+    width: 400px;
+    border-radius: 50%;
+}
+
+.hobby{
+    border: rgb(4, 4, 61);
+    margin: auto;
+    text-align: center;
+    background: rgb(5, 68, 100);
+    color: seashell;
+    padding: 15px auto;
+    
+}
+
+.firstcoloumn{
+  
+    border: rgb(36, 36, 117);
+    border-style: solid;
+    border-width: 1px;
+    height: 150px;
+    
+}
+
+
+.organize{
+    display: flex;
+}
+
+
