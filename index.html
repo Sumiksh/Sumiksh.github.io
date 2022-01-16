@@ -1,46 +1,81 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
-    <link rel="stylesheet"  href="styling.css">
-    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 </head>
-    <body>
-        <section class="wrapper">
-            <section class ="sidebar">
-                <a href="home.html" target="pages_a"><i class="fas fa-home"></i>Home</a>
-                <!-- <a href="dashboard.html" target="pages_a"><i class="fab fa-algolia"></i>Dashboard</a> -->
-                <a href="overview.html"  target="pages_a" ><i class="fas fa-anchor"></i>Overview</a>
-                <a href="experience.html"  target="pages_a"><i class="fas fa-cog fa-pulse"></i>Experience</a>
-                <br><br><br>
+<body>
+    <article style="background-image: url('four.jpg');">
+        <section  class="topnav" id="myTopnav">
+            <a href="#infoidtext" class="aboutinfoid">About Me</a>
+            <a href="#projectlist">Projects</a>
+            <a href="#contact">Hobbies</a> 
+            <!-- <a href="#portfolio" class="portfolio">Sumiksh Portfolio</a>  -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+        </section>
 
-                <span class="contactinfo"> Profession:</span>
-                <span class="contactinfo"> Web Developer</span>
-                <br><br><br>
 
-                <span class="contactinfo"> Schooling:</span>
-                <span class="contactinfo"> Electrical Engineering Technician  - Georgian College , </span>
-                <span class="contactinfo"> Computer programming  - Seneca College </span>
-                <br><br><br>
-
-                <span class="contactinfo"> For professional queries use email:</span>
-                <span class="contactinfo"> Contact : tsumiksh@gmail.com</span>
+        <section class="middlenav">
+            <img class="mainpageimage"src="two.jpg" alt="image_of_coding">
+        </section>
+       
+       
+        <br><br><br><br>
+        <section id="infoidtext" class="about_info">
+            <section>
+                <img class="photoid" src="three.jpg" alt="image_of_coding" >
             </section>
 
-
-        
-
-        <section>
-            <iframe id="frame" src="home.html" name="pages_a"   frameBorder="0" ></iframe>
+            <section>
+                <h3 class="photoidtext">Coding has been my hobby from quite a long time .I have been working on  programming languages as 
+                    per my development need and made  websites using javascript/HTML and CSS.
+                    Also, I love doing electronics projects. Coding skills along with the electronics knowledge is helping me to build 
+                    electronics text fixtures and home projects. Python is the most convenient language for automating the test 
+                    equipments like power supply, multimeter and other electronics 
+                     instruments or devices . Time and serial libraries from python were certainly very helpful for couple electronics projects.
+                </h3>
+            </section>
         </section>
-    </section>
-        
 
-    </body>
+        <br><br><br><br>
+        <section id="projectlist" class="exp">
+            <h2 class="skills"><b>TECHNOLOGY SKILLSET:</h2>
+                <p class="description"><i>Programming/Languages:</i> Python HTML, CSS and JavaScript,C, C++, Java <br><br>
+                <i>Databases:</i>  SQL, Oracle and MongoDB<br><br>
+                <i>IDE Tools:</i>  Eclipse, Code blocks and Visual Studio<br><br>
+                <i>Systems:</i>  Linux/Unix, Windows, Ubuntu, Backtrack<br><br>
+                </p>
+        </section>
+        <br><br>
+
+        <section class="exp">
+            <h2 class="skills"><b>PROJECTS:</b><br></h2>
+                <p  class="description"><i>Build memory game :</i> Using HTML to create content of the game, CSS for styling 
+                     and JavaScript for creating functions to handle the events <br><br>
+                <i>QR code generator:</i>  Using Python Programming created a QR code generator with the help of tkinter and qrcode library<br><br>
+                <i>Burglar alarm system:</i>  Built burglar alarm system by utilizing Arduino programming and basic electronics concepts<br><br>
+                <i>Websites:</i> Build websites from scratch using html css and javaScript<br><br>
+                <i>Automating text fixtures:</i> Using python to automate power supply and electronic equipments using
+                import and time library<br><br>
+                </p>
+        </section>
+    </article>
+
+
+    <script>
+        function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+    </script>
+</body>
 </html>
-
